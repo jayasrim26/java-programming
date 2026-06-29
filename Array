@@ -1,0 +1,10 @@
+Create Array
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner ( System.in);
+        String[] arr ={"Cow","Jack","Goat"};
+        arr[2] ="goat";
+        System.out.println(arr[2]);
+    }
+}
