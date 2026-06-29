@@ -1,0 +1,14 @@
+Create Break
+import java.util.Scanner;
+public class num {
+    public static void main ( String [] args){
+        int i=10;
+        Scanner scanner=new Scanner(System.in);
+        for(i=1;i<=10;i++){
+        if(i==8){
+           break;
+        }
+            System.out.println(i);
+        }
+    }
+}
