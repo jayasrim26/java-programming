@@ -1,0 +1,42 @@
+Create CRTS Switch Case
+import java.util.Scanner;
+public class option {
+    public static void main ( String [] args){
+        Scanner scanner=new Scanner(System.in);
+        System.out.print("1-Circle:");
+        System.out.print ("2-Rectangle:");
+        System.out.print("3-Triangle:");
+        System.out.println("4-Square:");
+        int option = scanner.nextInt();
+        switch(option) {
+        case 0:
+        System.out.print("Enter the radius of the circle:");
+        double radius = scanner.nextDouble();
+        double areaofcircle=Math.PI * radius * radius;
+        System.out.print("Area of circle:" + areaofcircle);
+        break;
+        case 1:
+        System.out.print("Enter the length of the rectangle:");
+        double length = scanner.nextDouble();
+        System.out.print("Enter the breadth of the rectangle:");
+        double breadth = scanner.nextDouble();
+        double areaofrectangle = length * breadth;
+        System.out.print("Area of rectangle:" + areaofrectangle);      
+        break;
+        case 2:
+        System.out.print("Enter the base of the triangle:");
+        double base = scanner.nextDouble();
+        System.out.print("Enter the height of the triangle:");
+        double height = scanner.nextDouble();
+        double areaoftriangle = base * height;
+        System.out.print("Area of triangle:" + areaoftriangle);        
+        break;
+        case 3:
+        System.out.print("Enter the side of the square:");
+        double side = scanner.nextDouble();
+        double areaofsquare = side * side;
+        System.out.print("Area of square:" + areaofsquare);       
+        break;
+    }
+}
+}
